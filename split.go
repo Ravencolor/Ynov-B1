@@ -19,7 +19,6 @@ func Split(str, charset string) []string {
 }
 
 func SplitWhiteSpaces(str string) []string {
-
 	TextToString := ""
 	t := []string{}
 	for i, v := range str {
@@ -37,9 +36,10 @@ func SplitWhiteSpaces(str string) []string {
 	}
 	return t
 }
+
 func lent2(d string) int {
 	inc := 0
-	for _, _ = range d {
+	for range d {
 		inc++
 	}
 	return inc
