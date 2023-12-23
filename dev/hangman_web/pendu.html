@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>Pendu</title>
+</head>
+<body>
+    <style>
+        body {
+          background-image: url('https://wallpapercave.com/wp/wp12769432.jpg');
+          background-attachment: fixed;
+          background-size: cover;
+        }
+    </style>
+<div id="PV">Point de vie : {{.PointDeVie}}0 %</div>
+
+<div id="tentatives-restantes">Tentatives restantes : {{.TentativesRestantes}}</div>
+    <div id="pendu-container">
+        <div id="mot-affiche">{{.MotAffiche}}</div>
+        <div id="lettres-devinees">Lettres utilisées : </div>
+        <div id="lettres-devinees">{{.LettresDevinees}}</div>
+        {{if or .PartieGagnee .PartiePerdue}}
+            <div id="message">
+                {{if .PartieGagnee}}
+                    Félicitations ! Vous avez gagné !
+                {{else}}
+                    Partie terminée !Vous avez rejoint le côté obscur. Le mot était : {{.MotADeviner}}
+                {{end}}
+            </div>
+            <form action="/?restart=true" method="get">
+                <div id="ligne2">
+                <button id="caseRejouer" type="submit">REJOUER</button>
+                </div>
+            </form>
+        {{else}}
+            <form id="proposition-form" method="post">
+                <div id="alignement">
+                    <button id="case" type="submit" name="proposition" value="A">A</button>
+                    <button id="case" type="submit" name="proposition" value="B">B</button>
+                    <button id="case" type="submit" name="proposition" value="C">C</button>
+                    <button id="case" type="submit" name="proposition" value="D">D</button>
+                    <button id="case" type="submit" name="proposition" value="E">E</button>
+                    <button id="case" type="submit" name="proposition" value="F">F</button>
+                    <button id="case" type="submit" name="proposition" value="G">G</button>
+                    <button id="case" type="submit" name="proposition" value="H">H</button>
+                    <button id="case" type="submit" name="proposition" value="I">I</button>
+                    <button id="case" type="submit" name="proposition" value="J">J</button>
+                    <button id="case" type="submit" name="proposition" value="K">K</button>
+                    <button id="case" type="submit" name="proposition" value="L">L</button>
+                    <button id="case" type="submit" name="proposition" value="M">M</button>
+                </div>
+                <div id="ligne2">
+                    <button id="case" type="submit" name="proposition" value="N">N</button>
+                    <button id="case" type="submit" name="proposition" value="O">O</button>
+                    <button id="case" type="submit" name="proposition" value="P">P</button>
+                    <button id="case" type="submit" name="proposition" value="Q">Q</button>
+                    <button id="case" type="submit" name="proposition" value="R">R</button>
+                    <button id="case" type="submit" name="proposition" value="S">S</button>
+                    <button id="case" type="submit" name="proposition" value="T">T</button>
+                    <button id="case" type="submit" name="proposition" value="U">U</button>
+                    <button id="case" type="submit" name="proposition" value="V">V</button>
+                    <button id="case" type="submit" name="proposition" value="W">W</button>
+                    <button id="case" type="submit" name="proposition" value="X">X</button>
+                    <button id="case" type="submit" name="proposition" value="Y">Y</button>
+                    <button id="case" type="submit" name="proposition" value="Z">Z</button>
+                </div>
+            </form>
+        {{end}}
+    </div>
+</body>
+</html>
