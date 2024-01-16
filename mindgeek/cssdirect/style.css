@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Candal&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+p {
+    line-height: 250%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Candal', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #263B50;
+}
+
+h3 {
+    font-size: 2rem
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+i {
+    margin-bottom: 0.3rem;
+    color: #FE8999
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    margin: auto;
+    max-width: 80%;
+    font-family: 'Open Sans', sans-serif;
+    background-color:#FCFCFC;
+}
+header{margin-top: 3rem}
+header h1{font-size: 2.5rem;text-align: center;margin-bottom: 3rem}
+header section p{font-size: 2rem;text-align: center;margin-left: 4rem;margin-right:4rem }
+nav{
+    font-size: 1.4rem;
+    font-weight: bolder;
+    margin-bottom: 5rem;
+}
+nav ul{list-style-type: none}
+nav ul{display:flex;flex-direction: row-reverse;justify-content:space-between}
+
+nav ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+nav i {
+    margin-bottom: 0.3rem
+}
+
+nav a {
+    text-decoration: none;
+    color: #263B50;
+    font-size: medium;
+}
+nav img{width: 10rem;height: 10rem}
+
+header section {
+    color: whitesmoke;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+}
+
+header > p {
+    color: whitesmoke;
+    font-size: 2rem;
+    text-transform: uppercase;
+    background-color: #FE8999;
+    padding: 1.5rem 4rem
+}
+
+main .fas {
+    font-size: xx-large;
+}
+
+
+p {
+    font-size: 1.3rem
+}
+
+main h2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 1px dotted gray;
+    border-bottom: none;
+    width: 100%;
+    text-align: center;
+    padding-top: 2rem;
+
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem
+}
+
+main article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around
+}
+
+main section div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1rem;
+    width: 30%;
+}
+
+main figure {
+    color: #FE8999;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+main figcaption {
+    margin-top: 1rem;
+    margin-bottom: 1rem
+}
+
+
+footer {
+    background-color: #263B50;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+footer img {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+footer ul a {
+    color: whitesmoke;
+    font-size: 1.3rem;
+    font-weight: bold
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3rem 1rem 3rem;
+}
+
+footer div {
+    color: #a1a1a1;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 2rem
+}

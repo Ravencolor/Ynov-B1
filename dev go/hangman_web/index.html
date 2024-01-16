@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sélection de liste</title>
+    <link rel="stylesheet" href="./static/index.css">
+</head>
+<body>
+    <style>
+        body {
+            background-image: url('https://i.gifer.com/7fdk.gif');
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+    <div class="titre">
+        Hangman Web
+    </div>
+    <div id="header">
+        <form action="/start" method="post">
+            <label>Choisissez un thème :</label>
+            <div id="alignement">
+                <button id="case" type="submit" name="liste" value="0">Personnages</button>
+                <button id="case" type="submit" name="liste" value="1">Planètes</button>
+                <button id="case" type="submit" name="liste" value="2">Races</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
