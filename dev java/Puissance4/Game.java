@@ -74,8 +74,18 @@ public class Game {
 	 */
 	private void start() throws InterruptedException {
 
-		System.out.println("Bonjour ! \n1)Joueur contre Joueur\n2)Joueur contre Ordinateur");
-		int choice = sc.nextInt();
+		int choice;
+		do {
+			System.out.println("Bonjour ! \n1)Joueur contre Joueur\n2)Joueur contre Ordinateur");
+			while(!sc.hasNextInt()) {
+				System.out.println("Merci d'entrer soit 1 soit 2.");
+				sc.next();
+			}
+			choice = sc.nextInt();
+			if(choice != 1 && choice != 2) {
+				System.out.println("Merci d'entrer soit 1 soit 2.");
+			}
+		} while(choice != 1 && choice != 2);
 
 		System.out.println("Entrez le nom du premier joueur:");
 		sc.nextLine();
@@ -109,7 +119,6 @@ public class Game {
 				int column;
 
 					do {
-
 						System.out.println(j.getName() + " quelle colonne choisi tu (0 à 6)?");
 
 						while(!sc.hasNextInt()) {
@@ -118,6 +127,10 @@ public class Game {
 						}
 
 						column = sc.nextInt();
+
+						if(column > 6) {
+							System.out.println("Erreur: Le chiffre n'est pas entre 0 et 6. Merci de recommencer:");
+						}
 
 					} while (column > 6 || column < 0 );
 
