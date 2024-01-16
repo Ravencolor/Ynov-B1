@@ -1,6 +1,6 @@
 /* Antoine 
 
-La classe Computer hérite des attributs et méthodes de _Player_ et contient des méthodes de gestion de l'IA:
+La classe Computer hérite des attributs et méthodes de Player et contient des méthodes de gestion de l'IA:
 
 definePositions() initialise les tableau de positions jouables et adverses.
 

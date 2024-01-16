@@ -53,7 +53,7 @@ public class Game {
 	@param nameA Nom du joueur A
 	@param nameB Nom du joueur B
 	 */
-	private void initialize(String nameA, String nameB) {
+	private void initialize(String nameA, String nameB) throws InterruptedException {
 
 		Symbol symbolA = randomize() == 0 ? Symbol.JAUNE : Symbol.ROUGE;
 		Symbol symbolB = symbolA == Symbol.JAUNE ? Symbol.ROUGE :Symbol.JAUNE;
@@ -96,8 +96,13 @@ public class Game {
 
 		String nameB = choice == 1 ? sc.nextLine() : "Ordinateur";
 
+		if (nameA.equals(nameB)) {
+			System.out.println("Les deux joueurs ne peuvent pas avoir le même nom, merci de recommencer:");
+			start();
+		} else {
 		initialize(nameA, nameB);
 		jouerManche();
+		}
 	}
 	
 	/*
