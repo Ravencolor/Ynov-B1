@@ -20,7 +20,7 @@ Ce dossier contient tous les projets contenant du java comme l'Ymmersion de deux
 
 Ce dossier contient les projets faits lors du module JS
 
-## Utilisation
+## Remarque
 
 Le git est là pour aider et non pour donner la solution 
 
