@@ -1,4 +1,6 @@
-# Puissance 4 - Jeu Console
+# Puissance 4 - Jeu 
+
+Pas de sujet définis nous avons donc fait le sujet comme nous le souhaitons.
 
 ## Compilation et Exécution
 
