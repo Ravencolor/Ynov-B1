@@ -38,3 +38,11 @@ Ce projet vous aidera à apprendre :
 ### Paquets autorisés
 
 - Seuls les paquets [standard go](https://golang.org/pkg/) sont autorisés.
+
+### Utilisation
+
+```bash
+# Exécutez le serveur hangman-web avec le fichier words.txt en paramètre
+$> go run main.go
+```
+Puis aller sur localhost:8080

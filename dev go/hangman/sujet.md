@@ -9,10 +9,10 @@ Notions :
 - Documentation Golang : rand
 - Exemple de lecture de fichier
 
-Instructions :
+## Instructions :
 Créez un programme `hangman` qui prendra un fichier en paramètre. Créez un fichier `words.txt` qui contient plusieurs mots avec lesquels le programme jouera. Chaque mot est séparé par un retour à la ligne `\n`. Vous pouvez également trouver différents dictionnaires [ici](https://www.mit.edu/~ecprice/wordlist.10000).
 
-PARTIE 1 —
+### PARTIE 1 —
 Vous aurez 10 tentatives pour terminer le jeu.
 
 1. Tout d'abord, le programme choisira de manière aléatoire un mot dans le fichier.
@@ -22,7 +22,7 @@ Vous aurez 10 tentatives pour terminer le jeu.
 5. Si la lettre est présente, il révélera toutes les lettres correspondantes dans le mot.
 6. Le programme continue jusqu'à ce que le mot soit trouvé ou que le nombre de tentatives soit épuisé.
 
-PARTIE 2 —
+### PARTIE 2 —
 Appelons José le pauvre homme qui sera pendu à cette corde si vous perdez.
 
 Vous recevrez un fichier nommé `hangman.txt` qui contient toutes les positions de José. Ce fichier contient 10 positions correspondant aux 10 tentatives nécessaires pour terminer le jeu.
@@ -46,7 +46,7 @@ Voici un exemple de la septième position de José :
 =========
 ```
 
-Aide :
+### Aide :
 Si vous ne savez pas comment manipuler les données de votre programme, vous pouvez toujours essayer d'utiliser une structure et un pointeur vers une structure dans les paramètres de vos futures fonctions.
 
 C'est juste un exemple, vous êtes libre de ne pas l'utiliser, de le modifier ou de créer le vôtre.
@@ -67,9 +67,12 @@ Bonne chance !
 Paquets autorisés :
 Seuls les paquets standard de Go sont autorisés.
 
-Utilisation :
+### Utilisation
+
 ```bash
-$> ./hangman words.txt
+# Exécutez le serveur hangman-web avec le fichier words.txt en paramètre
+$> go run main.go
+
 Bonne chance, vous avez 10 tentatives.
 _ _ _ _ O
 

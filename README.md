@@ -1,6 +1,7 @@
 # B1
 
-Ce projet a été réalisé dans le cadre de la première année à Lille Ynov Campus. Il contient plusieurs dossiers, chacun ayant un objectif spécifique dans le cadre de la première année.
+Ce git a été réalisé dans le cadre de la première année à Lille Ynov Campus. Il contient plusieurs dossiers, chacun ayant un objectif spécifique dans le cadre de la première année.
+Les sujet.md sont present pourcomprendre le but du sujet
 
 ## Contenu du git
 
@@ -19,6 +20,10 @@ Ce dossier contient tous les projets contenant du java comme l'Ymmersion de deux
 ### dev js
 
 Ce dossier contient les projets faits lors du module JS
+
+### dev python
+
+Ce dossier contient les projets faits lors du module POO (programmation orienté objet)
 
 ## Remarque
 
