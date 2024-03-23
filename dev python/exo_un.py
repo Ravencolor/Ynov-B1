@@ -21,28 +21,9 @@ class Library:
         return authors
     
     def sum_of_marked_pages(self):
-        sum = 0
-        for book in self.books:
-            sum += book.marked_Page
-        return sum
+        return sum([book.marked_page for book in self.books])
 
-"""
-class Library:
-    def __init__(self, books):
-        self.books = books
-    def list_authors(self):
-        authors = []
-        for book in self.books:
-            authors.append(book.author)
-        return authors
 
-    def sum_of_marked_pages(self):
-        sum = 0
-        for book in self.books:
-            sum += book.marked_Page
-        return sum
-
-"""
 
 book1 = Book(100, "Author1", "123456789", 50)
 book2 = Book(200, "Author2", "987654321", 100)
