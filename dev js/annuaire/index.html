@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Contacts</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Gestion des Contacts</h1>
+    
+    <button id="ajout-utilisateur1">Ajouter un nouveau contact</button>
+    <button id="supprimer-tous">Supprimer tous les contacts</button>
+    
+    <div id="ajout-contact">
+        <h2>Ajouter / Modifier un Contact</h2>
+        <form>
+            <label for="civil">Civilité:</label>
+            <select id="civil">
+                <option value="monsieur">Monsieur</option>
+                <option value="madame">Madame</option>
+                <option value="mademoiselle">Mademoiselle</option>
+            </select><br><br>
+            
+            <label for="prenom">Prénom:</label>
+            <input type="text" id="prenom"><br><br>
+            
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom"><br><br>
+            
+            <label for="num">Numéro:</label>
+            <input type="text" id="num"><br><br>
+            
+            <button type="button" id="ajout-utilisateur2">Enregistrer</button>
+        </form>
+    </div>
+    
+    <h2>Filtrer par Alphabet</h2>
+    <div id="alphabet">
+        <button class="alpha-btn">A</button>
+        <button class="alpha-btn">B</button>
+        <button class="alpha-btn">C</button>
+        <button class="alpha-btn">D</button>
+        <button class="alpha-btn">E</button>
+        <button class="alpha-btn">F</button>
+        <button class="alpha-btn">G</button>
+        <button class="alpha-btn">H</button>
+        <button class="alpha-btn">I</button>
+        <button class="alpha-btn">J</button>
+        <button class="alpha-btn">K</button>
+        <button class="alpha-btn">L</button>
+        <button class="alpha-btn">M</button>
+        <button class="alpha-btn">N</button>
+        <button class="alpha-btn">O</button>
+        <button class="alpha-btn">P</button>
+        <button class="alpha-btn">Q</button>
+        <button class="alpha-btn">R</button>
+        <button class="alpha-btn">S</button>
+        <button class="alpha-btn">T</button>
+        <button class="alpha-btn">U</button>
+        <button class="alpha-btn">V</button>
+        <button class="alpha-btn">W</button>
+        <button class="alpha-btn">X</button>
+        <button class="alpha-btn">Y</button>
+        <button class="alpha-btn">Z</button>
+    </div>
+    <h2>Liste des Contacts</h2>
+    <ul id="liste-utilisateur"></ul>
+    
+
+    <script src="events.js"></script>
+</body>
+</html>

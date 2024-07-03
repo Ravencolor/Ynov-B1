@@ -1,0 +1,128 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 20px;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+}
+
+/* Header */
+h1 {
+  font-size: 36px;
+}
+
+/* Buttons */
+button,
+.modification,
+.suppression{
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 25px; /* Plus arrondi */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
+  transition: background-color 0.3s, transform 0.3s; /* Transition ajoutée */
+}
+
+button:hover {
+  background-color: rgb(0, 112, 201);
+  transform: scale(1.05); /* Légère mise à l'échelle au survol */
+}
+
+/* Form */
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"], select {
+  width: calc(100% - 22px); /* Ajout d'un espace pour le bord */
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Contact list */
+ul {
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+suppression bouton-action
+/* Contact list */
+li {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ajout d'un espace entre les boutons */
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+/* Alphabet buttons */
+#alphabet {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  
+}
+
+.alpha-btn {
+  background-color: rgb(0, 112, 201);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 25px; /* Plus arrondi */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
+  transition: background-color 0.3s, transform 0.3s; /* Transition ajoutée */
+}
+
+.alpha-btn:hover {
+  background-color: rgb(0, 112, 201);
+  transform: scale(1.05); /* Légère mise à l'échelle au survol */
+}
+
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+#ajout-utilisateur1,
+#ajout-utilisateur2 {
+  background-color: rgb(44, 206, 44);
+  width: 210px;
+}
+
+#supprimer-tous,
+.suppression {
+  background-color: rgb(206, 44, 44);
+  width: 210px;
+}
+
+.modification {
+  background-color: rgb(0, 112, 201);
+  width: 210px;
+}
