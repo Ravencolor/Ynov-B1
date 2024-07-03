@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: transparent; /* Réglage de la couleur d'arrière-plan du body à transparent */
+    height: 100%;
+}
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Assurez-vous que la div est derrière tout le contenu */
+}
+.content {
+    position: relative; /* Assurez-vous que le contenu apparaît par-dessus le fond */
+    z-index: 1;
+}
+
+h1 {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 64px;
+}
+
+p {
+    padding-top: 15%;
+    text-align: center;
+    font-size: 64px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+}

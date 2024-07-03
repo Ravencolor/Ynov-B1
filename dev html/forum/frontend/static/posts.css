@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.container {
+    background-color: #fff;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+h3 {
+    margin: 20px 0 10px 0;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 60px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #008CBA;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #007B9A;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.section-inner {
+    margin-inline: 0px;
+}
+
+
+#tenor-gif-embed{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

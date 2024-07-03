@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posts</title>
+    <link rel="stylesheet" href="../static/posts.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        
+        h1 {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        
+        .container {
+            background-color: #fff;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
+            margin: 0 0 10px 0;
+            color: #333;
+        }
+        
+        h3 {
+            margin: 20px 0 10px 0;
+        }
+        
+        ul {
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+        
+        form {
+            margin-top: 20px;
+        }
+        
+        textarea {
+            width: 100%;
+            min-height: 60px;
+            margin-bottom: 10px;
+        }
+        
+        button {
+            background-color: #008CBA;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #007B9A;
+        }
+        
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            text-decoration: none;
+            color: black;
+        }
+        
+        .section-inner {
+            margin-inline: 0px;
+        }
+        
+        
+        #tenor-gif-embed{
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <h1>Laisser un post</h1>
+    <form action="/troisDsubmit" method="post">
+        <input type="text" name="title" placeholder="Title" required><br>
+        <textarea name="body" placeholder="Body" required></textarea><br>
+        <button type="submit">Submit</button>
+    </form> 
+    <div>
+        <div>
+            Liste des posts
+        </div>
+        {{range .}}
+            <div>
+                <h2>{{.Title}}</h2>
+                <p>{{.Body}}</p>
+                <h3>Comments:</h3>
+                <ul>
+                    {{range .Comments}}
+                        <li>{{.Body}}</li>
+                    {{end}}
+                </ul>
+                <!-- Formulaire pour ajouter un commentaire -->
+                <form action="/troisDcomment" method="post">
+                    <input type="hidden" name="post_id" value="{{.ID}}">
+                    <textarea name="body" placeholder="Write your comment" required></textarea><br>
+                    <button type="submit">Comment</button>
+                </form>
+            </div>
+            <hr>
+        {{end}}
+    </div>
+    <a href="/home">Back to Home</a>
+</body>
+</html>

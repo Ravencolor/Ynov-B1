@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/index.css">
+    <title>Ynovation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #0079d3;
+            color: white;
+            padding: 10px;
+        }
+        h1 {
+            margin: 0;
+        }
+        .user-name {
+            font-size: 1rem;
+            margin: 0;
+        }
+        form {
+            background-color: white;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px;
+            margin: 5px 0;
+            border: none;
+            background-color: #0079d3;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        a {
+            display: block;
+            color: black;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+        }
+        a:hover {
+            background-color: hsl(211, 100%, 35%);
+        }
+        
+        .Section-inner {
+            padding-top: 5%;
+            margin-inline: auto;
+            width: min(100%, 78.75rem);
+        }
+        
+        @media (min-width: 43.1875rem) {
+            .Grid {
+                grid-template-columns: repeat(12, 1fr);
+            }
+        }
+        
+        .Grid {
+            column-gap: 1.25rem;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            row-gap: 1.25rem;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ynovation</h1>
+        <span class="user-name">{{.Username}}</span>
+    </header>
+    <div class="ListFormations-List">
+        <div class="Section-inner Grid">
+            <div class="col-2 col-md-3">
+                <a href="/Informatique" class="Card">
+                    <img src="https://static.vitrine.ynov.com/cdn-cgi/image/width=157,height=157,fit=cover,format=auto/var/site/storage/images/4/6/9/2/2964-2-fre-FR/71674858dbce-info_logo.png" srcset="https://static.vitrine.ynov.com/cdn-cgi/image/width=157,height=157,fit=cover,format=auto/var/site/storage/images/4/6/9/2/2964-2-fre-FR/71674858dbce-info_logo.png 157w, https://static.vitrine.ynov.com/cdn-cgi/image/width=314,height=314,fit=cover,format=auto/var/site/storage/images/4/6/9/2/2964-2-fre-FR/71674858dbce-info_logo.png 314w" sizes="157px" width="157" height="157" alt="Formation_Informatiquelisting" loading="lazy">
+                    <p class="Card-Title">Informatique</p>
+                </a>
+            </div>
+            <div class="col-2 col-md-3">
+                <a href="/Cybersecurite" class="Card">
+                    <img src="https://static.vitrine.ynov.com/cdn-cgi/image/width=157,height=157,fit=cover,format=auto/var/site/storage/images/2/0/0/2/82002-1-fre-FR/9b1260b5c460-logo_cyber.png" srcset="https://static.vitrine.ynov.com/cdn-cgi/image/width=157,height=157,fit=cover,format=auto/var/site/storage/images/2/0/0/2/82002-1-fre-FR/9b1260b5c460-logo_cyber.png 157w, https://static.vitrine.ynov.com/cdn-cgi/image/width=314,height=314,fit=cover,format=auto/var/site/storage/images/2/0/0/2/82002-1-fre-FR/9b1260b5c460-logo_cyber.png 314w" sizes="157px" width="157" height="157" alt="Logo Cybersécurité" loading="lazy">
+                    <p class="Card-Title">Cybersécurité</p>
+                </a>
+            </div>
+            <div class="col-2 col-md-3">
+                <a href="/MarketCom" class="Card">
+                    <img src="https://static.vitrine.ynov.com/cdn-cgi/image/width=157,height=157,fit=cover,format=auto/var/site/storage/images/7/1/0/8/58017-2-fre-FR/8b3bb7036d37-m-C_logo.png" srcset="https://static.vitrine.ynov.com/cdn-cgi/image/width=157,height=157,fit=cover,format=auto/var/site/storage/images/7/1/0/8/58017-2-fre-FR/8b3bb7036d37-m-C_logo.png 157w, https://static.vitrine.ynov.com/cdn-cgi/image/width=314,height=314,fit=cover,format=auto/var/site/storage/images/7/1/0/8/58017-2-fre-FR/8b3bb7036d37-m-C_logo.png 314w" sizes="157px" width="157" height="157" alt="Marketcom image listing" loading="lazy">
+                    <p class="Card-Title">Marketing &amp; Communication Digitale</p>
+                </a>
+            </div>
+            <div class="col-2 col-md-3">
+                <a href="/TechAndBuisness" class="Card">
+                    <img src="https://static.vitrine.ynov.com/cdn-cgi/image/width=157,height=157,fit=cover,format=auto/var/site/storage/images/8/0/0/8/58008-3-fre-FR/ca811a7e6678-tech-business_logo.png" srcset="https://static.vitrine.ynov.com/cdn-cgi/image/width=157,height=157,fit=cover,format=auto/var/site/storage/images/8/0/0/8/58008-3-fre-FR/ca811a7e6678-tech-business_logo.png 157w, https://static.vitrine.ynov.com/cdn-cgi/image/width=314,height=314,fit=cover,format=auto/var/site/storage/images/8/0/0/8/58008-3-fre-FR/ca811a7e6678-tech-business_logo.png 314w" sizes="157px" width="157" height="157" alt="tech &amp; business image listing" loading="lazy">
+                    <p class="Card-Title">Technology &amp; Business</p>
+                </a>
+            </div>
+            <div class="col-2 col-md-3">
+                <a href="/Architecture" class="Card">
+                    <img src="https://static.vitrine.ynov.com/cdn-cgi/image/width=157,height=157,fit=cover,format=auto/var/site/storage/images/6/7/9/2/2976-1-fre-FR/ce67d54c7c95-Formation_architecteinterieur.jpg" srcset="https://static.vitrine.ynov.com/cdn-cgi/image/width=157,height=157,fit=cover,format=auto/var/site/storage/images/6/7/9/2/2976-1-fre-FR/ce67d54c7c95-Formation_architecteinterieur.jpg 157w, https://static.vitrine.ynov.com/cdn-cgi/image/width=314,height=314,fit=cover,format=auto/var/site/storage/images/6/7/9/2/2976-1-fre-FR/ce67d54c7c95-Formation_architecteinterieur.jpg 314w" sizes="157px" width="157" height="157" alt="Formation_architecture" loading="lazy">
+                    <p class="Card-Title">Architecture d'intérieur &amp; Bâtiment Numérique</p>
+                </a>
+            </div>
+            <div class="col-2 col-md-3">
+                <a href="/CreaDesign" class="Card">
+                    <img src="https://static.vitrine.ynov.com/cdn-cgi/image/width=157,height=157,fit=cover,format=auto/var/site/storage/images/7/4/0/8/58047-2-fre-FR/35c56c3cbf0f-C-D_logo.png" srcset="https://static.vitrine.ynov.com/cdn-cgi/image/width=157,height=157,fit=cover,format=auto/var/site/storage/images/7/4/0/8/58047-2-fre-FR/35c56c3cbf0f-C-D_logo.png 157w, https://static.vitrine.ynov.com/cdn-cgi/image/width=314,height=314,fit=cover,format=auto/var/site/storage/images/7/4/0/8/58047-2-fre-FR/35c56c3cbf0f-C-D_logo.png 314w" sizes="157px" width="157" height="157" alt="Formation_creationdigit_listing" loading="lazy">
+                    <p class="Card-Title">Création &amp; Digital Design</p>
+                </a>
+            </div>
+            <div class="col-2 col-md-3">
+                <a href="/3DJeuxvideo" class="Card">
+                    <img src="https://static.vitrine.ynov.com/cdn-cgi/image/width=157,height=157,fit=cover,format=auto/var/site/storage/images/0/5/0/8/58050-2-fre-FR/abb17aaaa5f3-3D_logo.png" srcset="https://static.vitrine.ynov.com/cdn-cgi/image/width=157,height=157,fit=cover,format=auto/var/site/storage/images/0/5/0/8/58050-2-fre-FR/abb17aaaa5f3-3D_logo.png 157w, https://static.vitrine.ynov.com/cdn-cgi/image/width=314,height=314,fit=cover,format=auto/var/site/storage/images/0/5/0/8/58050-2-fre-FR/abb17aaaa5f3-3D_logo.png 314w" sizes="157px" width="157" height="157" alt="Formation_3DAnimation" loading="lazy">
+                    <p class="Card-Title">3D Animation &amp; Jeux vidéo</p>
+                </a>
+            </div>
+            <div class="col-2 col-md-3">
+                <a href="/Audiovisuel" class="Card">
+                    <img src="https://static.vitrine.ynov.com/cdn-cgi/image/width=157,height=157,fit=cover,format=auto/var/site/storage/images/2/3/0/8/58032-2-fre-FR/9105ee5f9448-logo-audio.png" srcset="https://static.vitrine.ynov.com/cdn-cgi/image/width=157,height=157,fit=cover,format=auto/var/site/storage/images/2/3/0/8/58032-2-fre-FR/9105ee5f9448-logo-audio.png 157w, https://static.vitrine.ynov.com/cdn-cgi/image/width=314,height=314,fit=cover,format=auto/var/site/storage/images/2/3/0/8/58032-2-fre-FR/9105ee5f9448-logo-audio.png 314w" sizes="157px" width="157" height="157" alt="Audiovisuel logo filière" loading="lazy">
+                    <p class="Card-Title">Audiovisuel</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
